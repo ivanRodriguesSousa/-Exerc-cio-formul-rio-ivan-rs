@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Formulário</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <fieldset>
+    
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com"required><br><br>
+        <label for="telefone">Telefone (formato (XX)XXXXX-XXXX):</label><br>
+        <input type="tel" name="telefone" id="telefone" placeholder="(61)92134-6012" required><br><br>
+        <label for="senha">Crie uma senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required><br><br>
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" placeholder="Sua idade"><br><br>
+        <label for="estado">Estado de entrega:</label><br>
+        <select name="estado" id="estado">
+            <option value="">--Selecione seu estado--</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="rioDejaneiro">Rio de Janeiro</option>
+            <option value="brasilia">Brasília</option>
+            <option value="ceara">Ceará</option>
+            <option value="maranhao">Maranhão</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="piaui">Piauí</option>
+            <option value="goias">Goiás</option>
+        </select><br><br>
+        <label for="cnh">Envie uma foto da sua CNH:</label><br>
+        <input type="file" name="cnh" id="cnh" accept=".jpg, .jpeg, .png" >
+    </fieldset><br><br><br>
+    <fieldset>
+        <legend>Escolha do Carro</legend>
+        <label for="modelo">Escolha o modelo:</label><br>
+        <input type="radio" name="modelo" id="modelo" value="BYDSeal">
+        <label for="modelo">BYD Seal</label><br>
+        <input type="radio" name="modelo" id="modelo" value="BYDHan">
+        <label for="modelo">BYD Han</label><br>
+        <input type="radio" name="modelo" id="modelo" value="BYDSongPlus">
+        <label for="modelo">BYD Song Plus</label><br><br>
+        <label for="itens">Itens adicionais:</label><br>
+        <input type="checkbox" name="itens" id="itens" value="som">
+        <label for="itens">Som Premium</label><br>
+        <input type="checkbox" name="itens" id="itens" value="ar">
+        <label for="itens">Ar-condicionado Digital</label><br>
+        <input type="checkbox" name="itens" id="itens" value="camera">
+        <label for="itens">Câmera 360°</label><br><br>
+        <label for="cor">Cor do carro:</label><br>
+        <input type="color" name="cor" id="cor"><br><br>
+        <label for="brilho">Intensidade de cor (brilho):</label><br>
+        <input type="range" name="brilho" id="brilho" >
+    </fieldset><br><br><br>
+    <fieldset>
+        <legend>Entrega</legend>
+        <label for="entrega">Data desejada para entrega:</label><br>
+        <input type="date" name="entrega" id="entrega"><br><br>
+        <label for="entrega">Hora preferida para entrega:</label><br>
+        <input type="time" name="entrega" id="entrega"><br><br>
+        <label for="entrega">Mês da compra:</label><br>
+        <input type="month" name="entrega" id="entrega">
+    </fieldset><br><br><br>
+    <fieldset>
+        <legend>Sua Opinião</legend>
+        <label for="Opinião">Conte qual é sua expectativa sobre o carro:</label><br>
+        <textarea name="Opinião" id="Opinião" rows="4" cols="40" placeholder="Espero que o carro tenha uma boa autonomia,seja confortável,silencioso e impressione os vizinhos!"></textarea>
+    </fieldset><br><br><br>
+    <fieldset>
+        <legend>Avaliação dos Modelos BYD</legend>
+        <label for="byd">Avalie o BYD Dolphin Puls:</label><br>
+        <input type="number" name="byd" id="byd"  placeholder="0 a 5 estrelas"><br><br>
+        <label for="byd">Avalie o BYD GS:</label><br>
+        <input type="number" name="byd" id="byd" placeholder="0 a 5 estrelas"><br><br>
+        <label for="byd">Avalie o BYD Mini:</label><br>
+        <input type="number" name="byd" id="byd" placeholder="0 a 5 estrelas">
+    </fieldset><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+</form>
+    
+</body>
+</html>
